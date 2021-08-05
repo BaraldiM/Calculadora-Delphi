@@ -24,6 +24,7 @@ type
 
 var
   Form1: TForm1;
+  sm1,sm2,result : Double;
 
 implementation
 
