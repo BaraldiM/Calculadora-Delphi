@@ -31,46 +31,46 @@ object Form1: TForm1
     Left = 288
     Top = 88
     Width = 121
-    Height = 69
+    Height = 21
     DoubleBuffered = True
     ParentDoubleBuffered = False
     TabOrder = 2
   end
   object soma: TButton
-    Left = 160
-    Top = 30
+    Left = 176
+    Top = 25
     Width = 75
     Height = 25
     Caption = 'Soma'
     TabOrder = 3
   end
-  object Button2: TButton
-    Left = 160
-    Top = 61
+  object divisao: TButton
+    Left = 176
+    Top = 56
     Width = 75
     Height = 25
     Caption = 'Divis'#227'o'
     TabOrder = 4
   end
-  object Button3: TButton
-    Left = 160
-    Top = 92
+  object multi: TButton
+    Left = 176
+    Top = 87
+    Width = 75
+    Height = 25
+    Caption = 'Multiplica'#231#227'o'
+    TabOrder = 5
+  end
+  object sub: TButton
+    Left = 176
+    Top = 118
     Width = 75
     Height = 25
     Caption = 'Subtra'#231#227'o'
-    TabOrder = 5
-  end
-  object Button4: TButton
-    Left = 160
-    Top = 123
-    Width = 75
-    Height = 25
-    Caption = 'Multiplica'#231'ao'
     TabOrder = 6
   end
-  object Button5: TButton
-    Left = 160
-    Top = 154
+  object percent: TButton
+    Left = 176
+    Top = 149
     Width = 75
     Height = 25
     Caption = 'Percentual'

@@ -21,12 +21,10 @@ type
     { Private declarations }
   public
     { Public declarations }
-
   end;
 
 var
   Form1: TForm1;
-  sm_1,sm_2,sm_3 : Double;
 
 implementation
 
