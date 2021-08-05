@@ -8,25 +8,22 @@ uses
 
 type
   TForm1 = class(TForm)
-    sm_1: TEdit;
-    sm_2: TEdit;
-    sm_3: TEdit;
+    sm1: TEdit;
+    sm2: TEdit;
+    result: TEdit;
     soma: TButton;
-    divisao: TButton;
     multi: TButton;
+    divis: TButton;
     sub: TButton;
     percent: TButton;
-
   private
     { Private declarations }
   public
     { Public declarations }
-
   end;
 
 var
   Form1: TForm1;
-  sm_1,sm_2,sm_3 : Double;
 
 implementation
 
