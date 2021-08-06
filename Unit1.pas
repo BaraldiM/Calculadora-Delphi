@@ -15,19 +15,62 @@ type
     multi: TButton;
     divis: TButton;
     sub: TButton;
-    percent: TButton;
+    procedure somaClick(Sender: TObject);
+    procedure multiClick(Sender: TObject);
+    procedure divisClick(Sender: TObject);
+    procedure subClick(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+    n1,n2,n3 : Double;
   end;
 
 var
   Form1: TForm1;
-  sm1,sm2,result : Double;
+
 
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.divisClick(Sender: TObject);
+begin
+  n1 := StrToFloat (sm1.Text);
+  n2 := StrToFloat (sm2.Text);
+  n3 := n1 / n2;
+
+  result.Text := FloatToStr (n3);
+end;
+
+procedure TForm1.multiClick(Sender: TObject);
+begin
+  n1 := StrToFloat (sm1.Text);
+  n2 := StrToFloat (sm2.Text);
+  n3 := n1 * n2;
+
+  result.Text := FloatToStr (n3);
+end;
+
+procedure TForm1.somaClick(Sender: TObject);
+
+begin
+
+  n1 := StrToFloat (sm1.Text);
+  n2 := StrToFloat (sm2.Text);
+  n3 := n1 + n2;
+
+  result.Text := FloatToStr (n3);
+
+end;
+
+procedure TForm1.subClick(Sender: TObject);
+begin
+  n1 := StrToFloat (sm1.Text);
+  n2 := StrToFloat (sm2.Text);
+  n3 := n1 - n2;
+
+  result.Text := FloatToStr (n3);
+end;
 
 end.
