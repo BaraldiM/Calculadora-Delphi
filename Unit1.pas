@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
 
 type
   TForm1 = class(TForm)
@@ -15,10 +15,12 @@ type
     multi: TButton;
     divis: TButton;
     sub: TButton;
+    clear: TSpeedButton;
     procedure somaClick(Sender: TObject);
     procedure multiClick(Sender: TObject);
     procedure divisClick(Sender: TObject);
     procedure subClick(Sender: TObject);
+    procedure clearClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,6 +35,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.clearClick(Sender: TObject);
+begin
+  result.Text := '';
+end;
 
 procedure TForm1.divisClick(Sender: TObject);
 begin

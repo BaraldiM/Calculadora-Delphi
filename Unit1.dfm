@@ -13,6 +13,14 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
+  object clear: TSpeedButton
+    Left = 297
+    Top = 44
+    Width = 23
+    Height = 22
+    Caption = 'C'
+    OnClick = clearClick
+  end
   object sm1: TEdit
     Left = 8
     Top = 8
@@ -28,8 +36,8 @@ object Form1: TForm1
     TabOrder = 1
   end
   object result: TEdit
-    Left = 168
-    Top = 18
+    Left = 170
+    Top = 33
     Width = 121
     Height = 33
     Font.Charset = DEFAULT_CHARSET
